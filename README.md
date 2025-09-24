@@ -120,92 +120,14 @@ I'm a dedicated Python Developer with strong experience in backend development u
 - `npm run lint` - Run ESLint
 - `npm run export` - Export static files for deployment
 
-## 📂 Project Structure
-
-```
-portfolio/
-├── src/
-│   ├── app/
-│   │   ├── globals.css      # Global styles and Tailwind imports
-│   │   ├── layout.tsx       # Root layout component
-│   │   └── page.tsx         # Homepage component
-│   └── components/
-│       ├── About.tsx        # About section
-│       ├── Contact.tsx      # Contact section with form
-│       ├── Experience.tsx   # Experience timeline
-│       ├── Hero.tsx         # Hero/landing section
-│       ├── Navigation.tsx   # Navigation bar
-│       ├── Projects.tsx     # Projects showcase
-│       └── Skills.tsx       # Skills and technologies
-├── public/                  # Static assets
-├── .github/                 # GitHub configuration
-├── next.config.js           # Next.js configuration
-├── tailwind.config.js       # Tailwind CSS configuration
-├── tsconfig.json           # TypeScript configuration
-└── package.json            # Dependencies and scripts
-```
-
-## 🎨 Customization
-
-### Personal Information
-Update the following files with your information:
-- `src/components/Hero.tsx` - Name, title, and social links
-- `src/components/About.tsx` - Personal background and facts
-- `src/components/Experience.tsx` - Work experience and education
-- `src/components/Contact.tsx` - Contact information and form
-- `src/app/layout.tsx` - Meta tags and SEO information
-
-### Styling
-- **Colors**: Modify `tailwind.config.js` for custom color schemes
-- **Animations**: Add custom animations in `globals.css`
-- **Layout**: Adjust spacing and layout in individual components
-
-### Projects
-Update `src/components/Projects.tsx` with your actual projects:
-- Project titles and descriptions
-- Technology stacks used
-- GitHub repository links
-- Live demo URLs
-- Project screenshots
-
-## 🚀 Deployment
-
-### GitHub Pages
-1. **Update next.config.js** (already configured for static export)
-2. **Build and export**
-   ```bash
-   npm run build
-   ```
-3. **Deploy to GitHub Pages** using the `out` folder
-
-### Vercel (Recommended)
-1. **Connect repository** to Vercel
-2. **Deploy automatically** on push to main branch
-
-### Netlify
-1. **Connect repository** to Netlify
-2. **Build command**: `npm run build`
-3. **Publish directory**: `out`
 
 ## 📱 Browser Support
 
-- ✅ Chrome (latest)
-- ✅ Firefox (latest)
-- ✅ Safari (latest)
-- ✅ Edge (latest)
-- ✅ Mobile browsers
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+-  Chrome (latest)
+-  Firefox (latest)
+-  Safari (latest)
+-  Edge (latest)
+-  Mobile browsers
 
 ## 📞 Contact
 
@@ -214,17 +136,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 💼 LinkedIn: [linkedin.com/in/ragav-nandhakumar](https://linkedin.com/in/ragav-nandhakumar)
 - 🐱 GitHub: [github.com/nanragav](https://github.com/nanragav)
 - 📧 Email: ragav.nandhakumar@email.com
-
-## 🎯 Future Enhancements
-
-- [ ] Blog section with CMS integration
-- [ ] Dark/Light theme toggle
-- [ ] Multi-language support
-- [ ] Advanced animations with Framer Motion
-- [ ] Project filtering and search
-- [ ] Visitor analytics integration
-- [ ] Performance monitoring
-- [ ] Newsletter subscription
 
 ---
 
