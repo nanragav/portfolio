@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Test - GitHub Pages Debugging</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #1a1a1a;
+            color: white;
+        }
+        .test-container {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #333;
+            border-radius: 8px;
+        }
+        .success { border-color: #22c55e; }
+        .error { border-color: #ef4444; }
+        img {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #444;
+            margin: 10px;
+            background: #333;
+        }
+        .status {
+            margin: 10px 0;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        .status.success { background: #22c55e; color: white; }
+        .status.error { background: #ef4444; color: white; }
+        .status.pending { background: #f59e0b; color: white; }
+    </style>
+</head>
+<body>
+    <h1>🔍 GitHub Pages Asset Loading Test</h1>
+    <p>Testing different asset path configurations for portfolio images.</p>
+
+    <!-- Test 1: Original paths -->
+    <div class="test-container" id="test1">
+        <h3>Test 1: /portfolio/icons/ paths</h3>
+        <div class="status pending">Loading...</div>
+        <img id="img1-profile" src="/portfolio/icons/profile.svg" alt="Profile">
+        <img id="img1-favicon" src="/portfolio/icons/happy-man.svg" alt="Favicon">
+    </div>
+
+    <!-- Test 2: Root paths -->
+    <div class="test-container" id="test2">
+        <h3>Test 2: /portfolio/ root paths</h3>
+        <div class="status pending">Loading...</div>
+        <img id="img2-profile" src="/portfolio/profile.svg" alt="Profile Root">
+        <img id="img2-favicon" src="/portfolio/happy-man.svg" alt="Favicon Root">
+    </div>
+
+    <!-- Test 3: Relative paths -->
+    <div class="test-container" id="test3">
+        <h3>Test 3: Relative paths</h3>
+        <div class="status pending">Loading...</div>
+        <img id="img3-profile" src="./icons/profile.svg" alt="Profile Relative">
+        <img id="img3-favicon" src="./icons/happy-man.svg" alt="Favicon Relative">
+    </div>
+
+    <!-- Test 4: Base64 embedded -->
+    <div class="test-container" id="test4">
+        <h3>Test 4: Fallback working images</h3>
+        <div class="status success">Should always work</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzQ0NCIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VGVzdDwvdGV4dD48L3N2Zz4=" alt="Working Test">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0MCIgZmlsbD0iIzIyYzU1ZSIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+T0s8L3RleHQ+PC9zdmc+" alt="Working Test 2">
+    </div>
+
+    <script>
+        function testImages() {
+            const tests = [
+                { container: 'test1', images: ['img1-profile', 'img1-favicon'] },
+                { container: 'test2', images: ['img2-profile', 'img2-favicon'] },
+                { container: 'test3', images: ['img3-profile', 'img3-favicon'] }
+            ];
+
+            tests.forEach(test => {
+                let loadedCount = 0;
+                let errorCount = 0;
+                const totalImages = test.images.length;
+
+                test.images.forEach(imgId => {
+                    const img = document.getElementById(imgId);
+                    
+                    img.onload = function() {
+                        loadedCount++;
+                        if (loadedCount + errorCount === totalImages) {
+                            updateStatus(test.container, loadedCount, errorCount);
+                        }
+                    };
+                    
+                    img.onerror = function() {
+                        errorCount++;
+                        img.style.border = '2px solid #ef4444';
+                        if (loadedCount + errorCount === totalImages) {
+                            updateStatus(test.container, loadedCount, errorCount);
+                        }
+                    };
+                });
+            });
+        }
+
+        function updateStatus(containerId, loaded, errors) {
+            const container = document.getElementById(containerId);
+            const statusDiv = container.querySelector('.status');
+            
+            if (loaded === 2) {
+                statusDiv.className = 'status success';
+                statusDiv.textContent = `✅ All images loaded (${loaded}/2)`;
+                container.className = 'test-container success';
+            } else if (errors === 2) {
+                statusDiv.className = 'status error';
+                statusDiv.textContent = `❌ All images failed (${errors}/2)`;
+                container.className = 'test-container error';
+            } else {
+                statusDiv.className = 'status error';
+                statusDiv.textContent = `⚠️ Mixed results (${loaded} loaded, ${errors} failed)`;
+                container.className = 'test-container error';
+            }
+        }
+
+        // Run tests when page loads
+        window.addEventListener('load', testImages);
+    </script>
+
+    <div style="margin-top: 40px; padding: 20px; background: #333; border-radius: 8px;">
+        <h3>📝 Debug Information</h3>
+        <p><strong>Current URL:</strong> <span id="current-url"></span></p>
+        <p><strong>Base URL:</strong> <span id="base-url"></span></p>
+        <p><strong>User Agent:</strong> <span id="user-agent"></span></p>
+        
+        <script>
+            document.getElementById('current-url').textContent = window.location.href;
+            document.getElementById('base-url').textContent = window.location.origin + window.location.pathname;
+            document.getElementById('user-agent').textContent = navigator.userAgent;
+        </script>
+    </div>
+</body>
+</html>

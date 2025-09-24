@@ -1,11 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { getIconPath } from '@/utils/assets'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
-
-const isProd = process.env.NODE_ENV === 'production'
-const basePath = isProd ? '/portfolio' : ''
 
 export const metadata: Metadata = {
   title: 'Sri Ragavendra Bharath S - Python Developer & Full Stack Engineer',
@@ -13,9 +11,9 @@ export const metadata: Metadata = {
   keywords: 'Python Developer, FastAPI, Flutter, Azure, Backend Development, SQLAlchemy, PostgreSQL, Security Testing, Full Stack Engineer',
   authors: [{ name: 'Sri Ragavendra Bharath S' }],
   icons: {
-    icon: `${basePath}/icons/happy-man.svg`,
-    shortcut: `${basePath}/icons/happy-man.svg`,
-    apple: `${basePath}/icons/happy-man.svg`,
+    icon: getIconPath('happy-man.svg'),
+    shortcut: getIconPath('happy-man.svg'),
+    apple: getIconPath('happy-man.svg'),
   },
   openGraph: {
     title: 'Sri Ragavendra Bharath S - Python Developer & Full Stack Engineer',

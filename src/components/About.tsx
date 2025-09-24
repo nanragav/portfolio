@@ -1,3 +1,5 @@
+import { getIconPath } from '@/utils/assets';
+
 export default function About() {
   return (
     <section id="about" className="py-20 bg-gradient-to-br from-dark-bg to-gray-900">
@@ -17,7 +19,7 @@ export default function About() {
             <div className="relative">
               <div className="w-80 h-80 bg-gray-800 rounded-3xl relative overflow-hidden border-2 border-gray-700">
                 <img 
-                  src={`${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/icons/profile.svg`}
+                  src={getIconPath('profile.svg')}
                   alt="Sri Ragavendra Bharath" 
                   className="w-full h-full object-cover"
                 />
