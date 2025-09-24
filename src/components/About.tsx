@@ -17,7 +17,7 @@ export default function About() {
             <div className="relative">
               <div className="w-80 h-80 bg-gray-800 rounded-3xl relative overflow-hidden border-2 border-gray-700">
                 <img 
-                  src="/icons/profile.svg" 
+                  src={`${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/icons/profile.svg`}
                   alt="Sri Ragavendra Bharath" 
                   className="w-full h-full object-cover"
                 />

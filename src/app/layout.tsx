@@ -4,15 +4,18 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const isProd = process.env.NODE_ENV === 'production'
+const basePath = isProd ? '/portfolio' : ''
+
 export const metadata: Metadata = {
   title: 'Sri Ragavendra Bharath S - Python Developer & Full Stack Engineer',
   description: 'Portfolio of Sri Ragavendra Bharath S - Python Developer with expertise in FastAPI, Flutter, Azure, and backend development. Specialized in secure, scalable applications and automation.',
   keywords: 'Python Developer, FastAPI, Flutter, Azure, Backend Development, SQLAlchemy, PostgreSQL, Security Testing, Full Stack Engineer',
   authors: [{ name: 'Sri Ragavendra Bharath S' }],
   icons: {
-    icon: '/icons/happy-man.svg',
-    shortcut: '/icons/happy-man.svg',
-    apple: '/icons/happy-man.svg',
+    icon: `${basePath}/icons/happy-man.svg`,
+    shortcut: `${basePath}/icons/happy-man.svg`,
+    apple: `${basePath}/icons/happy-man.svg`,
   },
   openGraph: {
     title: 'Sri Ragavendra Bharath S - Python Developer & Full Stack Engineer',
