@@ -8,49 +8,49 @@ export default function Skills() {
         { name: "FastAPI", icon: "⚡" },
         { name: "SQLAlchemy", icon: "🗃️" },
         { name: "REST APIs", icon: "🌐" },
-        { name: "PyUnit", icon: "🧪" },
-        { name: "Authentication", icon: "🔐" }
+        { name: "GraphQL", icon: "📊" },
+        { name: "Microservices", icon: "🏗️" }
       ],
       color: "blue"
     },
     {
-      title: "Databases & Cloud",
-      icon: "☁️",
+      title: "Databases & Storage",
+      icon: "💾",
       skills: [
         { name: "PostgreSQL", icon: "🐘" },
         { name: "MySQL", icon: "💾" },
         { name: "MongoDB", icon: "🍃" },
-        { name: "Azure", icon: "☁️" },
-        { name: "Firebase", icon: "🔥" },
-        { name: "Redis", icon: "⚡" }
+        { name: "Redis", icon: "⚡" },
+        { name: "Database Design", icon: "�️" },
+        { name: "Query Optimization", icon: "🎯" }
       ],
       color: "purple"
     },
     {
-      title: "Mobile & Frontend",
-      icon: "📱",
+      title: "Cloud & Infrastructure",
+      icon: "☁️",
       skills: [
-        { name: "Flutter", icon: "🦋" },
-        { name: "Dart", icon: "🎯" },
-        { name: "React", icon: "⚛️" },
-        { name: "TypeScript", icon: "📘" },
-        { name: "Tailwind CSS", icon: "🎨" },
-        { name: "Responsive Design", icon: "📐" }
+        { name: "Azure", icon: "☁️" },
+        { name: "Docker", icon: "🐳" },
+        { name: "Linux", icon: "🐧" },
+        { name: "Nginx", icon: "🌐" },
+        { name: "Server Architecture", icon: "�️" },
+        { name: "Load Balancing", icon: "⚖️" }
       ],
-      color: "pink"
+      color: "green"
     },
     {
       title: "DevOps & Security",
       icon: "🔒",
       skills: [
-        { name: "Docker", icon: "🐳" },
+        { name: "CI/CD", icon: "�" },
         { name: "Git/GitHub", icon: "📦" },
-        { name: "Linux", icon: "🐧" },
-        { name: "Security Testing", icon: "🛡️" },
-        { name: "CI/CD", icon: "🔄" },
-        { name: "Nginx", icon: "🌐" }
+        { name: "Security Testing", icon: "�️" },
+        { name: "API Security", icon: "�" },
+        { name: "Automated Testing", icon: "🧪" },
+        { name: "Performance Monitoring", icon: "📈" }
       ],
-      color: "green"
+      color: "red"
     }
   ]
 
@@ -127,8 +127,8 @@ export default function Skills() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            I love working with modern technologies to build scalable, secure, and user-friendly applications. 
-            Here are the tools and technologies I'm passionate about.
+            I specialize in backend development with a focus on building scalable, secure, and high-performance server-side systems. 
+            Here are the core technologies I use to create robust backend solutions.
           </p>
         </div>
 

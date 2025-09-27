@@ -3,64 +3,64 @@
 export default function Projects() {
   const projects = [
     {
-      title: "SQLmap-GUI",
-      description: "Advanced GUI wrapper for sqlmap that exposes the full set of sqlmap arguments and options through an intuitive graphical interface. Perfect for security professionals who need powerful penetration testing tools.",
-      technologies: ["Python", "PyQt", "SQLmap", "Security Testing"],
-      github: "https://github.com/nanragav/SQLmap-GUI",
-      demo: "#",
-      icon: "🛡️",
-      category: "Security Tool",
-      status: "Open Source"
-    },
-    {
-      title: "HRM-Backend",
-      description: "Comprehensive RESTful backend system for Human Resource Management. Features user authentication, attendance tracking, leave management, and role-based access control with enterprise-grade architecture.",
+      title: "HRM-Backend API System",
+      description: "Enterprise-grade RESTful backend system for Human Resource Management. Features JWT authentication, role-based access control, database optimization, and scalable microservices architecture with comprehensive API documentation.",
       technologies: ["Python", "FastAPI", "SQLAlchemy", "MySQL", "JWT"],
       github: "https://github.com/nanragav/HRM-Backend",
       demo: "#",
-      icon: "💼",
-      category: "Enterprise System",
+      icon: "�",
+      category: "Backend System",
       status: "Open Source"
     },
     {
-      title: "DotDotPwn Python",
-      description: "Python implementation of a directory traversal fuzzer and vulnerability scanner. Comprehensive security testing tool with GUI interface and detailed reporting capabilities.",
-      technologies: ["Python", "Security Testing", "GUI", "Vulnerability Assessment"],
-      github: "https://github.com/nanragav/dotdotpwn-python",
-      demo: "#",
-      icon: "🔍",
-      category: "Security Tool",
-      status: "Open Source"
-    },
-    {
-      title: "RemindMe Flutter App",
-      description: "Beautiful and intuitive task management mobile app built with Flutter. Features custom notifications, sound alerts, and cross-platform compatibility with Material Design.",
-      technologies: ["Flutter", "Dart", "Mobile Development", "Notifications"],
-      github: "https://github.com/nanragav/RemindMe",
-      demo: "#",
-      icon: "📱",
-      category: "Mobile App",
-      status: "Open Source"
-    },
-    {
-      title: "Aircalc - Dynavac Sales Tool",
-      description: "Professional mobile application for engineering calculations used by Dynavac India's sales team. Features Gmail OAuth authentication and intuitive UI for field engineers.",
-      technologies: ["Flutter", "Firebase", "OAuth", "Gmail API"],
-      github: "#private",
-      demo: "#",
-      icon: "📊",
-      category: "Enterprise App",
-      status: "Client Project"
-    },
-    {
-      title: "Production Backend System",
-      description: "Robust, high-performance backend system built for production environments. Features optimized architecture, Nginx integration, and comprehensive API design.",
-      technologies: ["Python", "FastAPI", "Nginx", "Performance Optimization"],
+      title: "Production Backend Infrastructure",
+      description: "High-performance backend system architected for production environments. Features optimized database queries, Redis caching, Nginx load balancing, and comprehensive API monitoring with automated scaling capabilities.",
+      technologies: ["Python", "FastAPI", "Nginx", "Redis"],
       github: "#private",
       demo: "#",
       icon: "⚡",
       category: "Backend System",
       status: "Client Project"
+    },
+    {
+      title: "SQLmap-GUI Security Tool",
+      description: "Advanced Python-based GUI wrapper for sqlmap with complete API integration. Features automated vulnerability scanning, detailed reporting, and secure database interaction testing for penetration testing workflows.",
+      technologies: ["Python", "PyQt", "SQLmap", "API Security"],
+      github: "https://github.com/nanragav/SQLmap-GUI",
+      demo: "#",
+      icon: "�️",
+      category: "Security Tool",
+      status: "Open Source"
+    },
+    {
+      title: "DotDotPwn Vulnerability Scanner",
+      description: "Python-based directory traversal vulnerability scanner with advanced backend security testing capabilities. Features automated API endpoint scanning and comprehensive vulnerability assessment reporting.",
+      technologies: ["Python", "Security Testing", "API Security", "Vulnerability Assessment"],
+      github: "https://github.com/nanragav/dotdotpwn-python",
+      demo: "#",
+      icon: "�",
+      category: "Security Tool",
+      status: "Open Source"
+    },
+    {
+      title: "Aircalc Backend API",
+      description: "Backend API system for engineering calculations used by Dynavac India's sales team. Features secure authentication, data processing APIs, and integration with external services for field engineering applications.",
+      technologies: ["Python", "FastAPI", "OAuth", "API Integration"],
+      github: "#private",
+      demo: "#",
+      icon: "📊",
+      category: "Backend API",
+      status: "Client Project"
+    },
+    {
+      title: "Task Management Backend",
+      description: "Scalable backend system for task management applications. Features real-time notifications API, user authentication, data synchronization, and cross-platform API support with comprehensive documentation.",
+      technologies: ["Python", "FastAPI", "WebSockets", "API Design"],
+      github: "https://github.com/nanragav/RemindMe",
+      demo: "#",
+      icon: "📋",
+      category: "Backend API",
+      status: "Open Source"
     }
   ]
 
@@ -86,8 +86,8 @@ export default function Projects() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            Here's a collection of projects that showcase my passion for building innovative solutions. 
-            From open-source security tools to enterprise applications, each project reflects my commitment to quality and innovation.
+            Here's a collection of backend systems and APIs that demonstrate my expertise in server-side development. 
+            From scalable microservices to security tools, each project showcases robust architecture and clean code principles.
           </p>
         </div>
 

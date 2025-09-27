@@ -6,9 +6,9 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Sri Ragavendra Bharath S - Python Developer & Full Stack Engineer',
-  description: 'Portfolio of Sri Ragavendra Bharath S - Python Developer with expertise in FastAPI, Flutter, Azure, and backend development. Specialized in secure, scalable applications and automation.',
-  keywords: 'Python Developer, FastAPI, Flutter, Azure, Backend Development, SQLAlchemy, PostgreSQL, Security Testing, Full Stack Engineer',
+  title: 'Sri Ragavendra Bharath S - Backend Python Developer & API Architect',
+  description: 'Portfolio of Sri Ragavendra Bharath S - Backend Python Developer specializing in FastAPI, microservices, database design, and scalable server architectures. Expert in building robust APIs and backend systems.',
+  keywords: 'Backend Python Developer, FastAPI, API Development, Microservices, SQLAlchemy, PostgreSQL, Server Architecture, Python Backend Engineer, REST API, Database Design',
   authors: [{ name: 'Sri Ragavendra Bharath S' }],
   icons: {
     icon: getIconPath('happy-man.svg'),
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     apple: getIconPath('happy-man.svg'),
   },
   openGraph: {
-    title: 'Sri Ragavendra Bharath S - Python Developer & Full Stack Engineer',
-    description: 'Portfolio showcasing expertise in Python, FastAPI, Flutter, and modern backend technologies',
+    title: 'Sri Ragavendra Bharath S - Backend Python Developer & API Architect',
+    description: 'Portfolio showcasing expertise in Python backend development, FastAPI, microservices, and scalable server architectures',
     type: 'website',
   },
 }

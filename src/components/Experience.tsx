@@ -1,17 +1,17 @@
 export default function Experience() {
   const experiences = [
     {
-      title: "Full Stack Developer",
+      title: "Backend Python Developer",
       company: "Dynavac India Pvt Ltd",
       period: "Oct 2024 - Present",
       location: "Coimbatore, India",
       description: [
-        "Building innovative internal tools and automation systems using Python to streamline operations",
-        "Developing and maintaining robust backend services for both mobile and desktop applications",
-        "Collaborating closely with teams to understand workflows and create tailored technical solutions",
-        "Creating production-ready Flutter applications with Firebase integration and OAuth authentication for the sales team"
+        "Architecting and developing scalable backend systems and RESTful APIs using Python and FastAPI",
+        "Designing and optimizing database schemas, implementing efficient queries and data processing pipelines",
+        "Building secure authentication systems, API middleware, and microservices for enterprise applications",
+        "Developing automated backend solutions and system integrations to streamline business operations"
       ],
-      technologies: ["Python", "Flutter", "Firebase", "OAuth", "Automation", "Backend Services"],
+      technologies: ["Python", "FastAPI", "Database Design", "API Architecture", "Microservices", "System Integration"],
       icon: "🏢",
       color: "blue",
       current: true
@@ -33,17 +33,17 @@ export default function Experience() {
       current: false
     },
     {
-      title: "Freelance Developer",
+      title: "Backend Python Developer (Freelance)",
       company: "Independent Projects",
       period: "2023 - 2024",
       location: "Remote",
       description: [
-        "Delivered custom backend solutions using FastAPI and PostgreSQL for diverse client needs",
-        "Developed specialized security testing tools and GUI applications for penetration testing workflows",
-        "Created cross-platform mobile applications with Flutter, focusing on user experience and performance",
-        "Implemented comprehensive log analysis systems using Splunk for performance monitoring and insights"
+        "Delivered custom backend API solutions using FastAPI, SQLAlchemy, and PostgreSQL for diverse client requirements",
+        "Developed secure authentication systems, database optimization, and scalable server architectures",
+        "Built specialized security testing tools and backend vulnerability assessment systems",
+        "Implemented comprehensive backend monitoring, logging, and performance analysis systems using industry tools"
       ],
-      technologies: ["FastAPI", "PostgreSQL", "Flutter", "Security Testing", "Splunk"],
+      technologies: ["FastAPI", "PostgreSQL", "SQLAlchemy", "API Security", "Backend Architecture", "Performance Monitoring"],
       icon: "💻",
       color: "purple",
       current: false
@@ -85,8 +85,8 @@ export default function Experience() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            My career journey reflects a passion for continuous learning and building impactful solutions. 
-            From volunteer teaching to enterprise development, each role has shaped my perspective on technology and teamwork.
+            My career journey focuses on backend development and server-side architecture. 
+            From freelance API development to enterprise backend systems, each role has deepened my expertise in Python and scalable system design.
           </p>
         </div>
 

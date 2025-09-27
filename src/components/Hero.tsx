@@ -30,21 +30,21 @@ export default function Hero() {
           {/* Subtitle with Typing Effect */}
           <div className="mb-8 animate-slide-up">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-300 mb-4">
-              Full Stack Developer & Python Specialist
+              Backend Python Developer & API Architect
             </h2>
             <div className="flex flex-wrap justify-center gap-4 text-lg text-gray-400">
               <span className="px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full">FastAPI</span>
-              <span className="px-4 py-2 bg-purple-500/10 border border-purple-500/30 rounded-full">Flutter</span>
-              <span className="px-4 py-2 bg-pink-500/10 border border-pink-500/30 rounded-full">Cloud Solutions</span>
+              <span className="px-4 py-2 bg-purple-500/10 border border-purple-500/30 rounded-full">PostgreSQL</span>
+              <span className="px-4 py-2 bg-pink-500/10 border border-pink-500/30 rounded-full">Microservices</span>
             </div>
           </div>
           
           {/* Description */}
           <div className="mb-12 animate-slide-up delay-200">
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              Crafting robust backend systems and beautiful mobile experiences. 
+              Designing and building high-performance backend systems, RESTful APIs, and scalable server architectures. 
               Currently working at <span className="text-blue-400 font-semibold">Dynavac India</span>, 
-              building scalable solutions that make a difference.
+              creating robust server-side solutions that power modern applications.
             </p>
           </div>
           
