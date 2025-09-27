@@ -1,53 +1,66 @@
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 px-4 relative overflow-hidden bg-gradient-to-br from-dark-bg to-gray-900">
+    <section id="contact" className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/30 relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute top-0 left-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      <div className="absolute top-20 left-1/4 w-72 h-72 bg-blue-100/40 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 right-1/4 w-96 h-96 bg-purple-100/40 rounded-full blur-3xl"></div>
       
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              Let's Connect
-            </span>
+          <h2 className="heading-lg gradient-text mb-6">
+            Let's Connect
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Ready to turn ideas into reality? I'm always excited to collaborate on 
-            innovative projects and explore new opportunities in tech!
+          <div className="section-divider w-24 mx-auto mb-6"></div>
+          <p className="text-body text-lg max-w-3xl mx-auto">
+            Ready to collaborate on your next backend project? I'm always excited to discuss 
+            new opportunities and explore innovative solutions!
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Contact Information */}
           <div className="space-y-6">
-            <div className="backdrop-blur-sm bg-white/5 rounded-3xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <h3 className="text-2xl font-bold text-white mb-8 text-center">Get In Touch</h3>
+            <div className="card-glass p-8">
+              <h3 className="text-2xl font-bold text-slate-800 mb-8 text-center">Get In Touch</h3>
               <div className="space-y-6">
                 <div className="flex items-center space-x-4 group">
-                  <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-gray-400 text-sm font-medium">Email</p>
-                    <a href="mailto:sriragavendrabharath@outlook.com" className="text-white text-lg hover:text-blue-400 transition-colors">
+                    <p className="text-slate-500 text-sm font-medium">Email</p>
+                    <a href="mailto:sriragavendrabharath@outlook.com" className="text-slate-800 text-lg hover:text-blue-600 transition-colors">
                       sriragavendrabharath@outlook.com
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-center space-x-4 group">
-                  <div className="w-14 h-14 bg-gradient-to-r from-pink-500 to-red-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-14 h-14 bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-slate-500 text-sm font-medium">Phone</p>
+                    <a href="tel:+918428424434" className="text-slate-800 text-lg hover:text-emerald-600 transition-colors">
+                      +91 8428424434
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-4 group">
+                  <div className="w-14 h-14 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-gray-400 text-sm font-medium">Location</p>
-                    <p className="text-white text-lg">Tirupur, Tamil Nadu</p>
+                    <p className="text-slate-500 text-sm font-medium">Location</p>
+                    <p className="text-slate-800 text-lg">Tirupur, Tamil Nadu, 641603</p>
                   </div>
                 </div>
               </div>
@@ -76,33 +89,52 @@ export default function Contact() {
                   href="https://www.linkedin.com/in/sriragavendrabharath/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex flex-col items-center p-6 bg-gradient-to-r from-blue-600 to-blue-500 rounded-2xl hover:from-blue-500 hover:to-blue-400 transition-all duration-300 group"
+                  className="flex flex-col items-center p-6 bg-blue-100 hover:bg-blue-200 rounded-2xl transition-all duration-300 group"
                 >
-                  <svg className="w-10 h-10 text-white mb-3 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-10 h-10 text-blue-600 mb-3 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                   </svg>
-                  <span className="text-white font-medium">LinkedIn</span>
-                  <span className="text-white/80 text-sm">Connect</span>
+                  <span className="text-blue-700 font-medium">LinkedIn</span>
+                  <span className="text-blue-600 text-sm">Connect</span>
+                </a>
+              </div>
+
+              <div className="text-center">
+                <a
+                  href="https://nanragav.github.io/portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary group inline-flex items-center"
+                >
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0 9c0 4.97-4.03 9-9 9s-9-4.03-9-9m9 9c0-4.97 4.03-9 9-9s9 4.03 9 9" />
+                  </svg>
+                  Visit Portfolio
+                  <svg className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
                 </a>
               </div>
             </div>
 
-            <div className="backdrop-blur-sm bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-3xl p-8 border border-blue-500/20">
-              <h3 className="text-2xl font-bold text-white mb-4">Ready to Collaborate?</h3>
-              <p className="text-gray-300 mb-6 leading-relaxed">
-                I'm currently open to new opportunities and exciting projects. 
-                Whether it's building robust backends, creating intuitive mobile apps, 
-                or tackling complex technical challenges - let's make something amazing together!
+            <div className="glass-effect p-8 rounded-2xl">
+              <h3 className="text-2xl font-bold text-slate-800 mb-4">My Expertise</h3>
+              <p className="text-slate-600 mb-6 leading-relaxed">
+                Currently pursuing Master's in Computer Science while working as a Python Backend Developer. 
+                I specialize in building secure, scalable backend systems and API integrations.
               </p>
               <div className="flex flex-wrap gap-3">
-                <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-full text-sm border border-blue-500/30">
-                  Full Stack Development
+                <span className="badge-primary">
+                  Backend Development
                 </span>
-                <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-full text-sm border border-purple-500/30">
-                  API Development
+                <span className="badge-secondary">
+                  API Design
                 </span>
-                <span className="px-4 py-2 bg-pink-500/20 text-pink-300 rounded-full text-sm border border-pink-500/30">
-                  Cloud Solutions
+                <span className="badge-success">
+                  Security Testing
+                </span>
+                <span className="badge-primary">
+                  Database Optimization
                 </span>
               </div>
             </div>
@@ -110,14 +142,16 @@ export default function Contact() {
         </div>
 
         {/* Footer */}
-        <div className="text-center mt-20 pt-8 border-t border-white/10">
-          <p className="text-gray-400 text-lg">
-            © 2025 Sri Ragavendra Bharath
+        <div className="text-center mt-20 pt-8 border-t border-slate-200">
+          <p className="text-slate-600 text-lg mb-4">
+            © 2025 Sri Ragavendra Bharath S
           </p>
-          <div className="mt-4 flex justify-center space-x-4">
-            <span className="text-sm text-gray-500">Made in India 🇮🇳</span>
-            <span className="text-sm text-gray-500">•</span>
-            <span className="text-sm text-gray-500">Hosted on GitHub Pages</span>
+          <div className="flex justify-center items-center space-x-4 text-slate-500">
+            <span className="text-sm">Made with ❤️ in India</span>
+            <span className="text-sm">•</span>
+            <span className="text-sm">Built with Next.js & Tailwind CSS</span>
+            <span className="text-sm">•</span>
+            <span className="text-sm">Hosted on GitHub Pages</span>
           </div>
         </div>
       </div>

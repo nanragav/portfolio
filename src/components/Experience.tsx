@@ -6,10 +6,10 @@ export default function Experience() {
       period: "Oct 2024 - Present",
       location: "Coimbatore, India",
       description: [
-        "Architecting and developing scalable backend systems and RESTful APIs using Python and FastAPI",
-        "Designing and optimizing database schemas, implementing efficient queries and data processing pipelines",
-        "Building secure authentication systems, API middleware, and microservices for enterprise applications",
-        "Developing automated backend solutions and system integrations to streamline business operations"
+        "Designed and maintained backend APIs and automation scripts in Python for internal applications",
+        "Integrated database solutions and optimized performance for business-critical systems", 
+        "Collaborated with cross-functional teams to improve workflows through backend automation",
+        "Developed scalable solutions that streamline business operations and enhance system efficiency"
       ],
       technologies: ["Python", "FastAPI", "Database Design", "API Architecture", "Microservices", "System Integration"],
       icon: "🏢",
@@ -22,9 +22,9 @@ export default function Experience() {
       period: "Nov 2023 - Mar 2024",
       location: "Tirupur, Tamil Nadu",
       description: [
-        "Mentored students in Python programming, networking concepts, and database design",
-        "Guided practical implementation of academic projects and software development best practices",
-        "Supported peers in debugging complex programming challenges and system architecture decisions",
+        "Supported student projects involving Python scripting and networking concepts",
+        "Mentored students in database design principles and backend development practices",
+        "Assisted in debugging complex programming challenges and system architecture decisions",
         "Contributed to creating a collaborative learning environment for emerging developers"
       ],
       technologies: ["Python", "Networking", "Database Systems", "Teaching", "Mentoring"],

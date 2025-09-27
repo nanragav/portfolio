@@ -2,127 +2,153 @@ import { getIconPath } from '@/utils/assets';
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-dark-bg to-gray-900">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/50 to-indigo-50/50 relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 right-10 w-64 h-64 bg-gradient-to-r from-blue-100/40 to-purple-100/40 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-10 w-80 h-80 bg-gradient-to-r from-emerald-100/40 to-blue-100/40 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
+        <div className="text-center mb-20">
+          <h2 className="heading-lg gradient-text mb-6">
             About Me
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+          <div className="section-divider w-24 mx-auto mb-6"></div>
+          <p className="text-body max-w-2xl mx-auto">
+            Passionate about building scalable backend systems and crafting elegant server-side solutions
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Profile Image */}
-          <div className="flex justify-center animate-fade-in">
-            <div className="relative">
-              <div className="w-80 h-80 bg-gray-800 rounded-3xl relative overflow-hidden border-2 border-gray-700">
+          <div className="flex justify-center lg:justify-start">
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative w-80 h-80 card-glass rounded-3xl overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50"></div>
                 <img 
                   src={getIconPath('profile.svg')}
-                  alt="Sri Ragavendra Bharath" 
-                  className="w-full h-full object-cover"
+                  alt="Ragav Nandhakumar" 
+                  className="w-full h-full object-cover relative z-10"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-500/10 to-transparent"></div>
               </div>
             </div>
           </div>
 
           {/* Content */}
-          <div className="space-y-6 animate-slide-up">
-            <div className="prose prose-lg text-gray-300">
-              <p className="text-xl leading-relaxed mb-6">
-                Hey there! I'm a passionate <span className="text-blue-400 font-semibold">Backend Python Developer</span> who 
-                specializes in building robust server-side systems and scalable APIs. Currently architecting 
-                powerful backend solutions at <span className="text-purple-400 font-semibold"> Dynavac India</span>, where I design 
-                systems that handle complex business logic and high-performance requirements.
+          <div className="space-y-8">
+            <div className="space-y-6">
+              <p className="text-body text-lg leading-relaxed">
+                Hey there! I'm <span className="gradient-text font-semibold">Sri Ragavendra Bharath</span>, a passionate 
+                Backend Python Developer who specializes in building robust, scalable server-side systems and APIs. 
+                Currently pursuing my Master's in Computer Science at Park's College while working as a Python Backend 
+                Developer at Dynavac India Pvt Ltd, where I architect powerful backend solutions that handle 
+                complex business logic and high-performance requirements.
               </p>
               
-              <p className="text-lg leading-relaxed mb-6">
-                My journey in tech started with a fascination for server-side architecture and data processing. 
-                I discovered Python and was captivated by its elegance for backend development. From there, 
-                I specialized in frameworks like <span className="text-blue-400">FastAPI</span>, mastering 
-                database design, API architecture, and building systems that can scale to handle millions of requests.
+              <p className="text-body leading-relaxed">
+                My journey in tech began during my Bachelor's in Computer Science at Park's College, Tirupur, where 
+                I developed a fascination for server-side architecture and data processing. I discovered Python's 
+                elegance for backend development and specialized in frameworks like <span className="text-blue-600 font-medium">FastAPI</span> and 
+                <span className="text-purple-600 font-medium"> SQLAlchemy</span>, mastering database design, API architecture, 
+                and building systems that scale beautifully.
               </p>
               
-              <p className="text-lg leading-relaxed mb-6">
-                My expertise lies in the server-side realm - designing efficient database schemas, creating secure 
-                authentication systems, optimizing query performance, and building <span className="text-blue-400">microservices</span> 
-                that communicate seamlessly. I'm passionate about clean code architecture, automated testing, 
-                and creating backend systems that are both powerful and maintainable.
+              <p className="text-body leading-relaxed">
+                I specialize in modern Python frameworks like <span className="text-blue-600 font-medium">FastAPI</span>, 
+                coupled with robust databases like <span className="text-emerald-600 font-medium">PostgreSQL</span> and 
+                <span className="text-purple-600 font-medium"> MySQL</span>. My focus is on creating secure, maintainable 
+                backend systems with proper authentication, optimized database queries, and scalable architecture. 
+                I'm also passionate about security testing and have developed several tools for vulnerability assessment.
               </p>
             </div>
 
-            {/* Key Points */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-              <div className="bg-blue-500/10 border border-blue-500/30 rounded-2xl p-6 hover:bg-blue-500/20 transition-all duration-300">
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center">
-                    <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {/* Key Specialties */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="card-glass p-6 group hover:scale-105 transition-all duration-300">
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-white">API Architect</h3>
-                    <p className="text-gray-400 text-sm">Designing scalable REST APIs</p>
+                    <h3 className="font-semibold text-slate-800 mb-1">API Architecture</h3>
+                    <p className="text-slate-600 text-sm">RESTful & GraphQL APIs</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-purple-500/10 border border-purple-500/30 rounded-2xl p-6 hover:bg-purple-500/20 transition-all duration-300">
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center">
-                    <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="card-glass p-6 group hover:scale-105 transition-all duration-300">
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-purple-100 to-purple-200 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-white">Database Expert</h3>
-                    <p className="text-gray-400 text-sm">Optimizing data architecture</p>
+                    <h3 className="font-semibold text-slate-800 mb-1">Database Design</h3>
+                    <p className="text-slate-600 text-sm">PostgreSQL & MySQL</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-pink-500/10 border border-pink-500/30 rounded-2xl p-6 hover:bg-pink-500/20 transition-all duration-300">
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-pink-500/20 rounded-full flex items-center justify-center">
-                    <svg className="w-6 h-6 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              <div className="card-glass p-6 group hover:scale-105 transition-all duration-300">
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 9a2 2 0 00-2 2v2a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-white">Team Player</h3>
-                    <p className="text-gray-400 text-sm">Collaborate to create magic</p>
+                    <h3 className="font-semibold text-slate-800 mb-1">Microservices</h3>
+                    <p className="text-slate-600 text-sm">Docker & Kubernetes</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-green-500/10 border border-green-500/30 rounded-2xl p-6 hover:bg-green-500/20 transition-all duration-300">
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center">
-                    <svg className="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              <div className="card-glass p-6 group hover:scale-105 transition-all duration-300">
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <svg className="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-white">Performance Focused</h3>
-                    <p className="text-gray-400 text-sm">Optimizing server performance</p>
+                    <h3 className="font-semibold text-slate-800 mb-1">Performance</h3>
+                    <p className="text-slate-600 text-sm">Optimization & Caching</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Call to Action */}
-            <div className="mt-8">
-              <p className="text-gray-400 mb-4">
-                When I'm not coding, you'll find me exploring new technologies, contributing to open source, 
-                or thinking about the next big problem to solve.
+            {/* Professional Philosophy */}
+            <div className="glass-effect p-6 rounded-2xl">
+              <h3 className="font-semibold text-slate-800 mb-3 flex items-center">
+                <svg className="w-5 h-5 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+                My Approach
+              </h3>
+              <p className="text-slate-600">
+                I believe in writing clean, maintainable code that tells a story. Every API endpoint, every database 
+                query, and every microservice should serve a clear purpose and scale gracefully. My goal is to build 
+                systems that are not just functional, but elegant and future-proof.
               </p>
+            </div>
+
+            {/* Call to Action */}
+            <div className="pt-4">
               <a
                 href="#contact"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-glow"
+                className="btn-primary group inline-flex items-center"
               >
-                Let's build something amazing together
-                <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                Let's Build Something Amazing
+                <svg className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </a>

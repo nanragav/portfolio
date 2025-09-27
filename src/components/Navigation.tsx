@@ -46,12 +46,14 @@ export default function Navigation() {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-slate-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+      isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg border-b border-slate-200' : 'bg-white/80 backdrop-blur-sm'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold text-white">Sri Ragavendra Bharath S</h1>
+            <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Sri Ragavendra Bharath S
+            </h1>
           </div>
           
           <div className="hidden md:block">
@@ -62,8 +64,8 @@ export default function Navigation() {
                   onClick={() => scrollToSection(item.id)}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                     activeSection === item.id
-                      ? 'text-purple-400 bg-purple-400/10'
-                      : 'text-gray-300 hover:text-white hover:bg-gray-700'
+                      ? 'text-blue-600 bg-blue-50 border border-blue-200'
+                      : 'text-slate-600 hover:text-slate-800 hover:bg-slate-50'
                   }`}
                 >
                   {item.label}
